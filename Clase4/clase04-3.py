@@ -12,4 +12,4 @@ print (max(my_string))
 
 print (my_string is int)
 
-print (my_string.count) #.count es el metodo a usar
+print (my_string.count("A")) #.count es el metodo a usar
