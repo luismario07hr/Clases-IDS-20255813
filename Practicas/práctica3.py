@@ -1,4 +1,4 @@
-#Crea tres variables: a = 10, b = 3, c = 5. Calcula y muestra: la suma de a y b, el resultado de a dividido entre b, el residuo de dividir a entre c.
+"""#Crea tres variables: a = 10, b = 3, c = 5. Calcula y muestra: la suma de a y b, el resultado de a dividido entre b, el residuo de dividir a entre c.
 a = 10
 b = 3
 c = 5
@@ -54,9 +54,9 @@ b = a >= 18
 
 print (f"¿Tienes la edad suficiente?:{b}")
 
-#Crea un ejemplo que combine operadores relacionales y lógicos, como: edad = 22; estudiante = True; print(edad >= 18 and estudiante).
+#Crea un ejemplo que combine operadores relacionales y lógicos, como: edad = 22; estudiante = True; print(edad >= 18 and estudiante)."""
 
 num_students = int(input("Ingrese el número de estudiantes en su salón:"))
-compa = num_students > 50
+comparacion = num_students > 50
 
-print (compa and False)
+print (comparacion and False)

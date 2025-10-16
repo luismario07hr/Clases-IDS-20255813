@@ -23,7 +23,7 @@ print (palabra2[0])
 print (palabra2[-1])"""
 
 #•	Crea una variable codigo = 'ABC1234XYZ' y muestra solo la parte numérica usando slice.
-codigo = "ABC1234XYZ"
-nums = codigo[3:7]
 
-print (nums)
+a = "Strong"
+
+"""print (a[0:4:2])"""
