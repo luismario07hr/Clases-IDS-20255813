@@ -14,7 +14,7 @@ x = int(input())
 ah = input()
 bh = input()
 
-que = int(len(ah)/x)
+que = int(len(ah)/x) #o usar //
 so = int(len(bh)/x)
 
 print (ah[:que] + bh[-so:])
@@ -79,7 +79,7 @@ side = complemento[b-1]
 
 print (f"El pedido de Alvin es: {comida} con {side}")"""
 
-num = int(input())
+"""num = int(input())
 solucion = (num * (num+1))/2
 
-print (int(solucion))
+print (int(solucion))"""
