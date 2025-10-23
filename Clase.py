@@ -18,4 +18,4 @@ elif tipo.lower() == "internacional":
         print ("0%")
 
 else: 
-    print ("estupido elegí las opciones que te damos no te inventes lo que querras")
+    print ("Esa opción no existe")
