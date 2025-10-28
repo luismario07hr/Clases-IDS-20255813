@@ -7,6 +7,6 @@ for x in range(num):
 
 for edad in edades: 
     if edad >= 15: 
-        n += 1
+        n = n + 1
 
 print (n)
