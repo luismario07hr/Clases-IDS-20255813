@@ -1,5 +1,63 @@
-a = int(input(""))
-dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+"""print ("HOLA, BIENVENIDO uwu")
 
-for x in dias: 
-    print (f"Hoy es el día {x}")
+a = int(input("¿Cuántas personas entran?: "))
+lista = []
+entra = 0
+noentra = 0
+
+for x in range(a): 
+    lista.append(int(input("Ingrese la edad de la persona que va a entrar: ")))
+    
+for edad in lista: 
+    if edad >= 15: 
+        entra = entra + 1
+    else: 
+        noentra = noentra + 1
+
+print (f"Las personas que entran son {entra} y las que no entran son {noentra}")"""
+
+"""dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+for i in dias[1]: 
+    print (i)"""
+    
+
+"""a = int(input())
+valores = [[1, 2, 6], 
+           [2, 7, 4], 
+           [6, 5, 9], 
+           [1, 10, 20]]
+valores6 = []
+
+for x in valores: 
+    for y in x: 
+        if y > a:
+            valores6.append(y)
+        
+print (valores6)"""
+
+"""presupuesto = 1000
+gasto = 0
+
+
+while gasto < presupuesto: 
+    compra =float(input("Monto a comprar: "))
+    gasto = compra + gasto
+
+presupuesto -= gasto
+
+print ("Ha llegado al límite del presupuesto")
+print (f"Su presupuesto final es de {presupuesto}")"""
+
+limite = int(input())
+valores = [[1, 2, 6], 
+           [2, 7, 4], 
+           [6, 5, 9], 
+           [1, 10, 20]] 
+suma = 0
+
+while suma < limite: 
+    for x in valores: 
+        for y in x: 
+            suma += y
+            
+print (suma)
