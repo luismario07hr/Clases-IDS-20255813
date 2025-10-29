@@ -35,7 +35,7 @@ for x in valores:
         
 print (valores6)"""
 
-presupuesto = 1000
+"""presupuesto = 1000
 gasto = 0
 
 
@@ -46,9 +46,9 @@ while gasto < presupuesto:
 presupuesto -= gasto
 
 print ("Ha llegado al límite del presupuesto")
-print (f"Su presupuesto final es de {presupuesto}")
+print (f"Su presupuesto final es de {presupuesto}")"""
 
-"""limite = int(input())
+limite = int(input())
 valores = [[1, 2, 6], 
            [2, 7, 4], 
            [6, 5, 9], 
@@ -64,4 +64,4 @@ while i < len(valores) and suma < limite:
         j += 1
     i += 1
                
-print (suma)"""
+print (suma)
