@@ -1,8 +1,12 @@
+#Listas de diccionarios
 datos_clientes = []
 datos_productos = []
+
+#Categorias
 categorias = []
 
 
+#Datos guardados de los pedidos
 cliente_pedido = []
 datos_pedidos = []
 total_pedido = []
@@ -79,33 +83,37 @@ while menu:
         cliente_pedido.append(datos_clientes[num_cliente-1])
         total_pedido.append(total)
     
-    elif opcion == "6":
-        print ("Los pedidos deL día son:")
-        for client, productos, gastado in zip(cliente_pedido, datos_pedidos, total_pedido):
-            print ("--------------------------------")
-            print ("El cliente con los datos")
-            print (" ")
-            for x, y in client.items(): 
-                print (f"{x}: {y}")
-            print (" ")
-            print ("Pidio")
-            for producto in productos: 
-                print ("  ")
-                for z, a in producto.items(): 
-                    print (f"{z}: {a}")
-            print (" ")
-            print (f"Con un total de {gastado}")
-            print ("--------------------------------")
-        print (f"El total vendido fue de {sum(total_pedido)}")
+    elif opcion == "6": #Mostrar los pedidos del día
+        if cliente_pedido == [] and datos_pedidos == [] and total_pedido == []: 
+            print ("No hay pedidos :(")
+        else:
+            print ("Los pedidos deL día son:")
+            for client, productos, gastado in zip(cliente_pedido, datos_pedidos, total_pedido):
+                print ("--------------------------------")
+                print ("El cliente con los datos")
+                print (" ")
+                for x, y in client.items(): 
+                    print (f"{x}: {y}")
+                print (" ")
+                print ("Pidio")
+                for producto in productos: 
+                    print ("  ")
+                    for z, a in producto.items(): 
+                        print (f"{z}: {a}")
+                print (" ")
+                print (f"Con un total de {gastado}")
+                print ("--------------------------------")
+                
+        print (f"El total vendido es de {sum(total_pedido)}")
             
-    elif opcion == "7": 
+    elif opcion == "7": #Mostrar categorías
        
         for coso in datos_productos: 
             numcat = coso["Categoria"]
             categorias.append(numcat)
             
         print ("--------------------------------")   
-        print (f"Las categorías disponibles son")
+        print (f"Las categorías disponibles son: ")
         for x in set(categorias):
             print (x)
         print ("--------------------------------")
